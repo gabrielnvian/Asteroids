@@ -32,7 +32,7 @@ jobs:
     # Telegram Notify (add after you set up secrets; runs on failure/success)
     - name: Notify Telegram on Failure
       if: failure()
-      uses: appleboy/telegram-action@v0.1.7
+      uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_CHAT_ID }}
         token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -40,7 +40,7 @@ jobs:
 
     - name: Notify Telegram on Success
       if: success()
-      uses: appleboy/telegram-action@v0.1.7
+      uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_CHAT_ID }}
         token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
