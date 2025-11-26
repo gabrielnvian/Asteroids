@@ -21,22 +21,21 @@ jobs:
         cache: 'maven'
 
     - name: Compile with Maven
-      run: mvn -B clean compile --file pom.xml  # Compiles sources, fails early if code breaks
+      run: mvn -B clean compile --file pom.xml
 
     - name: Run JUnit Tests with Maven
-      run: mvn -B test --file pom.xml  # Runs JUnit via Surefire, generates reports in target/surefire-reports
+      run: mvn -B test --file pom.xml
 
     - name: Package with Maven (post-tests)
-      run: mvn -B package --file pom.xml  # Builds JARs, tests already ran, but re-runs if you want
+      run: mvn -B package --file pom.xml
 
-    # Telegram Notify (add after you set up secrets; runs on failure/success)
     - name: Notify Telegram on Failure
       if: failure()
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: "Asteroids CI Failed: Tests/Build broke on ${{ github.ref }} in ${{ github.repository }}"
+        message: "Asteroids CI Failed: Tests / build broke on ${{ github.ref }} in ${{ github.repository }}"
 
     - name: Notify Telegram on Success
       if: success()
