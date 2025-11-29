@@ -1,13 +1,13 @@
-package org.psnbtech.entity;
+package main.java.org.psnbtech.entity;
 
 import java.awt.Graphics2D;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.psnbtech.Game;
-import org.psnbtech.WorldPanel;
-import org.psnbtech.util.Vector2;
+import main.java.org.psnbtech.Game;
+import main.java.org.psnbtech.WorldPanel;
+import main.java.org.psnbtech.util.Vector2;
 
 public class Player extends Entity {
 	

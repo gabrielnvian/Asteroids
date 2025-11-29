@@ -1,4 +1,4 @@
-package org.psnbtech;
+package main.java.org.psnbtech;
 
 import java.awt.BorderLayout;
 import java.awt.event.KeyAdapter;
@@ -11,10 +11,10 @@ import java.util.Random;
 
 import javax.swing.JFrame;
 
-import org.psnbtech.entity.Asteroid;
-import org.psnbtech.entity.Entity;
-import org.psnbtech.entity.Player;
-import org.psnbtech.util.Clock;
+import main.java.org.psnbtech.entity.Asteroid;
+import main.java.org.psnbtech.entity.Entity;
+import main.java.org.psnbtech.entity.Player;
+import main.java.org.psnbtech.util.Clock;
 
 /**
  * The {@code Game} class is responsible for initializing and running the game.

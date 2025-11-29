@@ -1,11 +1,11 @@
-package org.psnbtech.entity;
+package main.java.org.psnbtech.entity;
 
 import java.awt.Graphics2D;
 import java.util.Random;
 
-import org.psnbtech.Game;
-import org.psnbtech.WorldPanel;
-import org.psnbtech.util.Vector2;
+import main.java.org.psnbtech.Game;
+import main.java.org.psnbtech.WorldPanel;
+import main.java.org.psnbtech.util.Vector2;
 
 /**
  * Represents an Asteroid within the game world.

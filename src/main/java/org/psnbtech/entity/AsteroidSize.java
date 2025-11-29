@@ -1,4 +1,4 @@
-package org.psnbtech.entity;
+package main.java.org.psnbtech.entity;
 
 import java.awt.Polygon;
 

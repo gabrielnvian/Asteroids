@@ -1,4 +1,4 @@
-package org.psnbtech.util;
+package main.java.org.psnbtech.util;
 
 /**
  * Vector2 represents a 2-dimensional vector.
