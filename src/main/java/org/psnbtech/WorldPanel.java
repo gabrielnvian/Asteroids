@@ -1,4 +1,4 @@
-package main.java.org.psnbtech;
+package org.psnbtech;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -11,8 +11,8 @@ import java.util.Iterator;
 
 import javax.swing.JPanel;
 
-import main.java.org.psnbtech.entity.Entity;
-import main.java.org.psnbtech.util.Vector2;
+import org.psnbtech.entity.Entity;
+import org.psnbtech.util.Vector2;
 
 /**
  * The {@code WorldPanel} is responsible for displaying the game to the user.

@@ -1,9 +1,9 @@
-package main.java.org.psnbtech.entity;
+package org.psnbtech.entity;
 
 import java.awt.Graphics2D;
 
-import main.java.org.psnbtech.Game;
-import main.java.org.psnbtech.util.Vector2;
+import org.psnbtech.Game;
+import org.psnbtech.util.Vector2;
 
 /**
  * Represents a Bullet within the game world.

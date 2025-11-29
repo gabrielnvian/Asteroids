@@ -1,0 +1,89 @@
+AsteroidTest
+
+Test 1: The Asteroid constructor works correctly with a Random object.
+Test 2: Each asteroid instance is a unique object.
+Test 3: Child asteroids can be created safely from a parent asteroid.
+Test 4: Medium and large child asteroids can be created without throwing exceptions.
+Test 5: Multiple child asteroids created from the same parent are independent objects.
+
+
+
+AsteroidSizeTest
+
+Test 1: Small asteroid size has the correct kill value.
+Test 2: Medium asteroid size has the correct kill value.
+Test 3: Large asteroid size has the correct kill value.
+Test 4: All asteroid sizes have a positive radius.
+Test 5: Each asteroid size defines a valid polygon.
+
+
+
+BulletTest
+
+Test 1: A Bullet can be created from a valid entity owner.
+Test 2: Each bullet instance is a unique object.
+Test 3: Bullet update can be called safely without a Game object.
+Test 4: Bullet handleCollision can be called safely without a Game object.
+Test 5: Repeated bullet updates do not cause runtime errors.
+
+
+
+EntityTest
+
+Test 1: Entity position is stored and returned correctly.
+Test 2: Entity velocity is stored and returned correctly.
+Test 3: Calling rotate changes the rotation value.
+Test 4: flagForRemoval correctly marks the entity for deletion.
+Test 5: checkCollision correctly detects overlapping entities.
+
+
+
+PlayerTest
+
+Test 1: A Player object can be constructed safely.
+Test 2: The player spawns at the center of the world.
+Test 3: Thrust state can be changed without throwing errors.
+Test 4: Rotation setters can be called without throwing errors.
+Test 5: reset correctly restores position and velocity to default values.
+
+
+
+ClockTest
+
+Test 1: A Clock object can be created safely.
+Test 2: The Clock starts unpaused by default.
+Test 3: Pausing and unpausing works correctly.
+Test 4: Reset clears elapsed cycle state.
+Test 5: Cycles-per-second can be modified safely.
+
+
+
+Vector2Test
+
+Test 1: Vectors can be created with specific x and y values.
+Test 2: The copy constructor correctly duplicates vector state.
+Test 3: set correctly updates vector values.
+Test 4: add correctly modifies vector values.
+Test 5: getLengthSquared returns correct mathematical results.
+Test 6: scale correctly multiplies vector magnitude.
+Test 7: normalize correctly converts a vector to unit length.
+
+
+
+WorldPanelTest
+
+Test 1: WorldPanel can be constructed safely.
+Test 2: The panel’s preferred size matches WORLD_SIZE.
+Test 3: The background color is correctly set to black.
+Test 4: WORLD_SIZE is a valid positive value.
+Test 5: Each WorldPanel instance is independent.
+
+
+
+GameTest
+
+Test 1: The Game class loads correctly at runtime.
+Test 2: The main method exists and is accessible.
+Test 3: The getScore method exists and returns an integer.
+Test 4: The getEntities method exists and returns a list.
+Test 5: The getRandom method exists and returns a Random object.
